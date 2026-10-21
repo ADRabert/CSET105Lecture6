@@ -46,12 +46,11 @@ const student = {
 	}
 }
 student.printInfo();
-console.log();
 
 // Exercise 4: JSON of laptop model; convert to JS object, add price, convert back to JSON & print
 let laptop = JSON.parse('{ "type": "laptop", "model": "HP 15t-dw300" }');
 laptop.price = 500;
-console.log(JSON.stringify(laptop) + `\n`);
+console.log(`\n` + JSON.stringify(laptop) + `\n`);
 
 // Exercise 5: Person class; function to introduce self, & function that declares birthday & increases age
 class Person {
