@@ -23,8 +23,9 @@ const person = {
 	}
 }
 console.log(`\nPerson's name:`, person.firstName, person.lastName);
-person.age = 30;
 console.log(`Person's age:`, person.age);
+person.age = 30;
+console.log(`Person's new age:`, person.age);
 person.occupation = "Student";
 console.log(`The person is a`, person.occupation.toLowerCase() + `.`);
 person.greet();
