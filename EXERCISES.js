@@ -19,14 +19,14 @@ const person = {
 	age: 25,
 	city: "Lancaster",
 	greet: function() {
-		console.log("Hi, my name is", this.firstName, this["lastName"], `and I am`, this.age, `years old.`);
+		console.log("Hi, my name is", this.firstName, this["lastName"], `and I am`, this.age, `years old.\n`);
 	}
 }
-console.log(person.firstName, person.lastName);
+console.log(`\nPerson's name:`, person.firstName, person.lastName);
 person.age = 30;
-console.log(`Age of person:`, person.age);
+console.log(`Person's age:`, person.age);
 person.occupation = "Student";
-console.log(`The person is a `, person.occupation);
+console.log(`The person is a`, person.occupation.toLowerCase() + `.`);
 person.greet();
 
 // Exercise 3: Student object + info function; name must itself be object containing first & last
@@ -46,11 +46,12 @@ const student = {
 	}
 }
 student.printInfo();
+console.log();
 
 // Exercise 4: JSON of laptop model; convert to JS object, add price, convert back to JSON & print
 let laptop = JSON.parse('{ "type": "laptop", "model": "HP 15t-dw300" }');
 laptop.price = 500;
-console.log(JSON.stringify(laptop));
+console.log(JSON.stringify(laptop) + `\n`);
 
 // Exercise 5: Person class; function to introduce self, & function that declares birthday & increases age
 class Person {
@@ -66,11 +67,12 @@ class Person {
 }
 let persons = [];
 persons.push(new Person("Austin", 22));
-persons.push(new Person("Logan", 18));
+persons.push(new Person("Logan", 18)); // Partner
 persons[0].introduce();
 persons[1].birthday();
+console.log();
 
-// Exercise 6: Bank account
+// Exercise 6: Bank account class; functions to deposit to & withdraw from account, and display balance
 class BankAccount {
 	constructor(owner, balance) {
 		this.owner = owner, this.balance = balance;
@@ -80,18 +82,22 @@ class BankAccount {
 	}
 	deposit(amount) {
 		this.balance += amount;
+		console.log(`Deposited $` + amount, `to the account of`, this.owner + `.`);
 	}
 	withdraw(amount) {
 		this.balance -= amount;
+		console.log(`Withdrew $` + amount, `from the account of`, this.owner + `.`);
 	}
 }
 let account = new BankAccount("Rabert, Austin", 500);
+account.displayBalance();
 account.deposit(50);
 account.displayBalance();
 account.withdraw(100);
 account.displayBalance();
+console.log();
 
-// Exercise 7: Animal class
+// Exercise 7: Animal class; function to have animal make sound
 class Animal {
 	constructor(name, sound) {
 		this.name = name, this.sound = sound;
