@@ -11,3 +11,5 @@ This lecture introduces JavaScript objects and object-oriented programming.
 5. Create a person class, with name & age properties. Add a method that prints an introduction to the person. Create 2 objects using the class & call the method for each. Then, extend the class by adding a birthday method which increments & prints their new age.
 6. Create a bank account class, with owner & balance properties. Add methods that deposit to & withdraw from the account, and displays the current balance. Create an instance from that class & simulate some transactions.
 7. Create an animal class, with name & sound properties. Add a method that causes the animal to make a sound, and prints the sound it makes. Create dog & cat objects from the class, and have them make sounds.
+
+Thaddeus Stevens College of Technology, 2026.
