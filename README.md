@@ -3,6 +3,18 @@
 ## Lecture Info
 This lecture introduces JavaScript objects and object-oriented programming.
 
+## Features
+- Objects & properties
+- Directly creating objects as variables
+- Accessing object properties via dot & bracket notation
+- Creating functions/methods within objects
+- Calling the owner of a method with the `this` keyword
+- Nesting objects
+- JSON formatting & conversion to & from JS objects
+- Fundamentals of object-oriented programming
+- Classes, abstraction & instantiation
+- Creating objects with set properties using class constructors
+
 ## Exercises
 1. Create a car object with a make, model, year & color as properties. Add a function within it that starts the car, and prints that it has done so.
 2. Create a person object with first name, last name, age & city. Print the full name of the person using both dot & bracket notation. Change the age of the person to 30. Add an occupation to the person. Then, add a method to the person object with a basic greeting, using `this` to refer to the object properties.

@@ -22,7 +22,7 @@ const person = {
 		console.log("Hi, my name is", this.firstName, this["lastName"], `and I am`, this.age, `years old.\n`);
 	}
 }
-console.log(`\nPerson's name:`, person.firstName, person.lastName);
+console.log(`\nPerson's name:`, person.firstName, person["lastName"]);
 console.log(`Person's age:`, person.age);
 person.age = 30;
 console.log(`Person's new age:`, person.age);
