@@ -22,8 +22,7 @@ const person = {
 }
 console.log(`\nPerson's name:`, person.firstName, person["lastName"]);
 console.log(`Person's age:`, person.age);
-person.age = 30;
-console.log(`Person's new age:`, person.age);
+console.log(`Person's new age:`, person.age = 30);
 person.occupation = "Student";
 console.log(`The person is a`, person.occupation.toLowerCase() + `.`);
 person.greet();
@@ -47,7 +46,7 @@ const student = {
 student.printInfo();
 
 // Exercise 4: JSON of laptop model; convert to JS object, add price, convert back to JSON & print
-let laptop = JSON.parse('{ "type": "laptop", "model": "HP 15t-dw300" }');
+const laptop = JSON.parse('{ "type": "laptop", "model": "HP 15t-dw300" }');
 laptop.price = 500;
 console.log(`\n` + JSON.stringify(laptop) + `\n`);
 
@@ -63,7 +62,7 @@ class Person {
 		console.log("Hi, I'm", this.name, "and I am", this.age, "years old.");
 	}
 }
-let persons = [];
+const persons = [];
 persons.push(new Person("Austin", 22));
 persons.push(new Person("Logan", 18)); // Partner
 persons[0].introduce();
@@ -87,7 +86,7 @@ class BankAccount {
 		console.log(`Withdrew $` + amount, `from the account of`, this.owner + `.`);
 	}
 }
-let account = new BankAccount("Rabert, Austin", 500);
+const account = new BankAccount("Rabert, Austin", 500);
 account.displayBalance();
 account.deposit(50);
 account.displayBalance();
@@ -104,6 +103,6 @@ class Animal {
 		console.log(`The`, this.name, `says`, this.sound + `!`);
 	}
 }
-let dog = new Animal("dog", "bark"), cat = new Animal("cat", "meow");
+const dog = new Animal("dog", "bark"), cat = new Animal("cat", "meow");
 dog.makeSound();
 cat.makeSound();
