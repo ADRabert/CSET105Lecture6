@@ -1,5 +1,3 @@
-const prompt = require('prompt-sync')();
-
 // Exercise 1: Car object + start function
 const car = {
 	make: "Kia",
